@@ -8,7 +8,7 @@ echo archvbox > /etc/hostname
 echo "127.0.0.1		localhost" >> /etc/hosts
 echo "::1		localhost" >> /etc/hosts
 echo "127.0.0.1		archvbox" >> /etc/hosts
-pacman -S grub plasma kde-applications sudo konsole sddm networkmanager --noconfirm
+pacman -S grub plasma kde-applications sudo konsole sddm networkmanager
 grub-install /dev/sda
 grub-mkconfig -o /boot/grub/grub.cfg
 systemctl enable sddm.service
